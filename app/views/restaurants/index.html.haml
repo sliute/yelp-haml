@@ -1,0 +1,13 @@
+- if @restaurants.any?
+  - @restaurants.each do |r|
+    %h3= link_to r.name, restaurant_path(r)
+    %p
+    = r.description
+    %p
+    = link_to "Edit #{r.name}", edit_restaurant_path(r)
+    = link_to "Delete #{r.name}", restaurant_path(r), method: :delete
+    %p
+- else
+  No restaurants yet
+
+%a(href='/restaurants/new') Add a restaurant
