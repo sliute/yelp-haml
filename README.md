@@ -1,4 +1,4 @@
-# Yelp (2/5)
+# Yelp Clone (2/5)
 
 A  Ruby on Rails [Makers Academy course challenge](https://github.com/makersacademy).
 
